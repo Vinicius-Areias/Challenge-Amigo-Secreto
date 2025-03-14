@@ -60,8 +60,4 @@ function sortearAmigo(){
 }
 
 //Passo 05 (Extra): README
-
-
-
 //Passo 06 (Extra): Publique sua página
-
