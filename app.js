@@ -1,10 +1,10 @@
 //O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
 
 //Passo 01: Crie um array para armazenar os nomes
-let amigos =[];
+let amigos = [];
 
 //Passo 02: Implementa uma função para agregar amigos
-function agregarAmigo(){
+function agregarAmigo() {
     //Tarefa 01: Capturar o valor do campo de entrada
     const inputAmigo = document.getElementById("amigo");
     //Tarefa 02: Validar a entrada
@@ -17,6 +17,7 @@ function agregarAmigo(){
     //Verificar se não há nome duplicado?
     if(amigos.includes(nomeAmigo)){
         alert(`O nome ${nomeAmigo}` já está na lista.);
+        return;
     }
     //Tarefa 04: Atualizar o array de amigos
     amigos.push(nomeAmigo);
@@ -28,7 +29,7 @@ function agregarAmigo(){
 }
     
 //Passo 03: Implementa uma função para atualizar a lista de amigos
-function atualizarLista(){
+function atualizarLista() {
     //Tarefa 01: Obter o elemento da lista
     const listaAmigos = document.getElementById("listaAmigos");
     //Tarefa 02: Limpar a lista existente
@@ -59,5 +60,10 @@ function sortearAmigo(){
     resultado.innerHTML = `Amigo sorteado: <strong>${amigoSorteado}</strong>`;
 }
 
+
 //Passo 05 (Extra): README
+
+
+
 //Passo 06 (Extra): Publique sua página
+
