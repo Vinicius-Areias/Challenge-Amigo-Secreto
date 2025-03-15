@@ -42,25 +42,34 @@ function atualizarLista() {
 }
     
 //Passo 04: Implementa uma função para sortear os amigos
-function sortearAmigo(){
+function sortearAmigo() {
     //Tarefa 01: Validar que há amigos disponíveis
-    if(amigos.length == 0){
+    if(listaAmigos.length == 0) {
         alert("Não há amigos disponíveis para sortear. Adicione pelo menos um nome.");
         return;
+
     }
     //Tarefa 02: Gerar um índice aleatório
-    const indiceAleatorio = Math.floor(Math.random() * amigos.length);
+    let indiceAleatorio = Math.floor(Math.random() * listaAmigos.length);
     //Tarefa 03: Obter o nome sorteado
-    const amigoSorteado = amigos[indiceAleatorio];
+    let amigoSorteado = listaAmigos[indiceAleatorio];
+    //Tarefa 3.5: Impedir pessoa tirar o próprio nome
+    if (amigoSorteado == nomeAmigo) {
+        alert("Você não pode ser seu próprio amigo secreto! Tente novamente.");
+        return;
+    }
+
     //Tarefa 04: Mostrar o resultado
-    const resultado = document.getElementById("resultado");
-    resultado.innerHTML = `Amigo sorteado: <strong>${amigoSorteado}</strong>`;
+    document.getElementById("resultado").innerHTML = `Amigo sorteado: ${amigoSorteado}!`;
 }
 
+//Passo 04.5: Reiniciar sorteio
+function reiniciarSorteio() {
+    listaAmigos = [];
+    document.getElementById("resultado").innerHTML = "";
+    atualizarLista();
+}
 
 //Passo 05 (Extra): README
 
-
-
 //Passo 06 (Extra): Publique sua página
-
