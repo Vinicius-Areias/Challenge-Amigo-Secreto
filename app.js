@@ -1,9 +1,6 @@
 //O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
 
-//Passo 01: Crie um array para armazenar os nomes
-    //Descartada utilização de array
-
-//Passo 02: Implementa uma função para agregar amigos
+//Passo 01: Implementa uma função para agregar amigos
 function adicionarAmigo() {
     //Tarefa 01: Capturar o valor do campo de entrada
     let input = document.getElementById("amigo");
@@ -26,7 +23,7 @@ function adicionarAmigo() {
     }
 }
 
-//Passo 03: Implementa uma função para atualizar a lista de amigos
+//Passo 02: Implementa uma função para atualizar a lista de amigos
 function sortearAmigo() {
     //Tarefa 01: Obter o elemento da lista
     let lista = document.querySelectorAll("#listaAmigos li");
@@ -34,7 +31,7 @@ function sortearAmigo() {
     //Tarefa 02: Limpar a lista existente
     resultado.innerHTML = "";
 
-//Passo 04: Implementa uma função para sortear os amigos
+//Passo 03: Implementa uma função para sortear os amigos
     //Tarefa 01: Validar que há amigos disponíveis:
     if (lista.length > 0) {
     //Tarefa 02: Gerar um índice aleatório
@@ -50,7 +47,3 @@ function sortearAmigo() {
         alert("Insira pelo menos um nome válido.");
     }
 }
-
-//Passo 05 (Extra): README
-
-//Passo 06 (Extra): Publique sua página
